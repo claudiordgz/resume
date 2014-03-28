@@ -1,0 +1,125 @@
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage[some]{background}
+\usepackage[margin=0.5in]{geometry}
+
+\graphicspath{{./img/}{./logo/}}
+\usepackage{tikz}
+\usepackage{xstring}
+
+\newcommand{\Claudiordgz}{% For imported graphic logo
+\begin{tikzpicture}[remember picture,overlay,yshift=-3.5cm, xshift=-4cm]
+		\node at (0,0) {\includegraphics[scale=0.55]{logoClaudiordgz.eps}};
+\end{tikzpicture}
+}
+
+\newcommand{\ninetypercent}[1]{
+	\begin{tikzpicture}
+		\node[anchor=south west,inner sep=0] (image) at (0,0) {%
+		%trim option's parameter order: left bottom right top
+		\adjincludegraphics[width=\linewidth, trim=675 25 185 830, clip=true]{pie-chart-loading-color.eps}};
+		\begin{scope}[x={(image.south east)},y={(image.north west)}]
+			% The following three lines place a grid on the image, should be commented or removed for production
+			%\draw[help lines,xstep=.05,ystep=.1] (0,0) grid (1,1);
+			%\foreach \x in {0,1,2,...,10} { \node [anchor=north] at (\x/10,0) {0.\x}; }
+			%\foreach \y in {0,2,...,10} { \node [anchor=east] at (0,\y/10) {0.\y}; }
+			\draw[thick] (0.15,0.5) node [right] {\includegraphics[width=0.575\linewidth]{#1}};
+		\end{scope}
+	\end{tikzpicture}
+}
+
+\newcommand{\cplusplus}{
+	\ninetypercent{cplusplus.png}
+}	
+
+\newcommand{\python}{
+	\ninetypercent{python.png}
+}
+
+\newcommand{\latexprogress}{
+	\adjincludegraphics[width=\linewidth, trim=150 50 0 210, clip=true]{progress-bars.eps}
+}
+
+\newcommand{\bashbatch}{
+	\adjincludegraphics[width=\linewidth, trim=150 50 0 210, clip=true]{progress-bars.eps}
+}
+
+\newcommand{\csharp}{
+	\adjincludegraphics[width=\linewidth, trim=150 75 0 185, clip=true]{progress-bars.eps}
+}
+
+\SetBgContents{\Claudiordgz}% Select tikz picture
+
+\SetBgPosition{current page.north east}% Select location
+\SetBgOpacity{0.25}% Select opacity
+\SetBgAngle{0.0}% Select roation of logo
+\SetBgScale{1.0}% Select scale factor of logo
+
+\newcommand*{\ListOfPagesWithLogo}{1}%
+
+\makeatletter
+\newcommand*{\AddLogoIfCurrentPageIsOnList}{%
+    \foreach \LogoPage in \ListOfPagesWithLogo {%
+        \IfEq{\arabic{page}}{\LogoPage}{%
+            \bg@material%
+            \breakforeach%
+        }{}%
+    }%
+}%
+\makeatother
+\AddEverypageHook{\AddLogoIfCurrentPageIsOnList}%
+
+% Font Setup
+\usepackage{fix-cm}
+\usepackage{fontspec}
+\setmainfont[Path= fonts/,
+	BoldFont = TrebuchetMSBold.ttf,
+	ItalicFont = TrebuchetMSItalic.ttf
+]{TrebuchetMS.ttf}
+\usepackage{fontawesome}
+\newfontfamily{\FA}{FontAwesome.otf}
+\def\phone{{\FA \faPhone}}
+\def\mobilephone{{\FA \faMobilePhone}}
+\def\home{{\FA \faHome}}
+\def\pencil{{\FA \faPencil}}
+\def\twitter{{\FA \faTwitter}}
+\def\github{{\FA \faGithub}}
+\def\HTMLfive{{\FA \faHTMLfive}}
+\newcommand{\grayfont}[1]{\textcolor{Gray}{\normalsize \textbf{#1}}}
+\usepackage[hidelinks]{hyperref}
+
+\setkomafont{section}{\mysection}
+\newcommand{\mysection}[1]{%
+\setlength{\fboxsep}{0cm}%already boxed
+\colorbox{Blue}{%
+    \begin{minipage}{\linewidth}%
+        \vspace*{2pt}%Space before
+        \centering\normalfont\huge\bfseries\color{white}#1
+        \vspace*{2pt}%Space after
+    \end{minipage}%
+}} 
+
+\setkomafont{subsection}{\mysubsection}
+\newcommand{\mysubsection}[1]{%
+\Large\sf\bf%
+\setlength{\fboxsep}{0cm}%already boxed
+\begin{minipage}{\linewidth}%
+    \vspace*{2pt}%Space before
+    \centering\normalfont\sffamily\Large\bfseries#1
+    \vspace*{2pt}%Space after
+\end{minipage}%
+} 
+
+\setkomafont{subsubsection}{\mysubsubsection}
+\newcommand{\mysubsubsection}[1]{%
+\Large\sf\bf%
+\setlength{\fboxsep}{0cm}%already boxed
+\begin{minipage}{\linewidth}%
+    \vspace*{2pt}%Space before
+    \normalfont\sffamily\large\bfseries\color{Blue} #1
+    \vspace*{-0.4cm}%Space after
+\end{minipage}%
+} 
+
+\usepackage{enumitem}
