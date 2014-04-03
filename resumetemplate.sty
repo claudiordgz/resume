@@ -1,0 +1,28 @@
+
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{enumitem}
+\usepackage[some]{background}
+\usepackage[margin=0.5in]{geometry}
+
+\definecolor{resume-blue}{RGB}{40,111,229}
+\definecolor{resume-gray}{RGB}{102,102,102}
+
+\graphicspath{{./img/}{./logo/}}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{xstring}
+
+\newcommand{\NameColor}[1]{
+	\colorlet{resume-name}{#1}
+}
+\newcommand{\SectionColor}[1]{
+	\colorlet{section-color}{#1}
+}
+\newcommand{\ProfessionalItmNameColor}[1]{
+	\colorlet{prof-itm-name}{#1}
+}
+\newcommand{\ProfessionalItmYearColor}[1]{
+	\colorlet{prof-itm-year}{#1}
+}
