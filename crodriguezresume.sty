@@ -1,7 +1,7 @@
 
 \newcommand{\Claudiordgz}{% For imported graphic logo
 \begin{tikzpicture}[remember picture,overlay,yshift=-3.5cm, xshift=-4cm]
-		\node at (0,0) {\includegraphics[scale=0.55]{logoClaudiordgz.eps}};
+		\node at (0,0) {\includegraphics[width=0.4\linewidth]{logoClaudiordgz.png}};
 \end{tikzpicture}
 }
 
@@ -32,8 +32,8 @@
 	\begin{tikzpicture}
 		% center c1
 		\coordinate (c1) at (0,0);
-		\draw[fill=green, color=green] (c1) rectangle (0.8\linewidth,0.2cm);
-		\draw[fill=red, color=red] (0.8\linewidth,0cm) rectangle (1\linewidth,.2cm);
+		\draw[fill=resume-green, color=resume-green] (c1) rectangle (0.8\linewidth,0.2cm);
+		\draw[fill=resume-red, color=resume-red] (0.8\linewidth,0cm) rectangle (1\linewidth,.2cm);
 	\end{tikzpicture}
 }
 
@@ -41,8 +41,8 @@
 	\begin{tikzpicture}
 		% center c1
 		\coordinate (c1) at (0,0);
-		\draw[fill=green, color=green] (c1) rectangle (0.8\linewidth,0.2cm);
-		\draw[fill=red, color=red] (0.8\linewidth,0cm) rectangle (1\linewidth,.2cm);
+		\draw[fill=resume-green, color=resume-green] (c1) rectangle (0.8\linewidth,0.2cm);
+		\draw[fill=resume-red, color=resume-red] (0.8\linewidth,0cm) rectangle (1\linewidth,.2cm);
 	\end{tikzpicture}
 }
 
@@ -50,8 +50,17 @@
 	\begin{tikzpicture}
 		% center c1
 		\coordinate (c1) at (0,0);
-		\draw[fill=green, color=green] (c1) rectangle (0.55\linewidth,0.2cm);
-		\draw[fill=red, color=red] (0.55\linewidth,0cm) rectangle (1\linewidth,.2cm);
+		\draw[fill=resume-green, color=resume-green] (c1) rectangle (0.6\linewidth,0.2cm);
+		\draw[fill=resume-red, color=resume-red] (0.6\linewidth,0cm) rectangle (1\linewidth,.2cm);
+	\end{tikzpicture}
+}
+
+\newcommand{\htmlfivebar}{
+	\begin{tikzpicture}
+		% center c1
+		\coordinate (c1) at (0,0);
+		\draw[fill=resume-green, color=resume-green] (c1) rectangle (0.5\linewidth,0.2cm);
+		\draw[fill=resume-red, color=resume-red] (0.5\linewidth,0cm) rectangle (1\linewidth,.2cm);
 	\end{tikzpicture}
 }
 

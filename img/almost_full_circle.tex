@@ -1,13 +1,13 @@
 \documentclass[tikz,border={36.5pt -36pt -36pt 36.5pt}
               ]{standalone}
 \usepackage{../resumetemplate}
-\usepackage{../googlecolors}
+\usepackage{../standardcolors}
 \begin{document}
 	\begin{tikzpicture}
 		% center c1
 		\coordinate (c1) at (0,0);
 
-		\draw[fill=green, color=green]
+		\draw[fill=resume-green, color=resume-green]
 			% radius=6mm, initial=67.5, final=360
 			($(c1) + (120:8mm)$) arc (120:450:8mm)
 			--
@@ -22,6 +22,7 @@
 			% radius=7mm, reversed
 			($(c1) + (120:12mm)$) arc (120:90:12mm)
 			-- cycle;
-		\draw[fill=googleblue!30, color=googleblue!30] (c1) circle (8mm);
+		\draw[color=white] 
+			(c1) circle (8mm);
 	\end{tikzpicture}
 \end{document}
