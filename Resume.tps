@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=685
-NormalPos.bottom=245
+NormalPos.right=1059
+NormalPos.bottom=527
 Class=LaTeXView
-Document=Resume.tex
+Document=standardcolors.sty
 
 [Frame0_View0,0]
 TopLine=0
-Cursor=24
+Cursor=50
 
 [Frame1]
 Flags=0
@@ -29,14 +29,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=685
-NormalPos.bottom=245
+NormalPos.right=1059
+NormalPos.bottom=527
 Class=LaTeXView
-Document=crodriguezresume.sty
+Document=Resume.tex
 
 [Frame1_View0,0]
-TopLine=120
-Cursor=1998
+TopLine=31
+Cursor=2400
 
 [Frame2]
 Flags=0
@@ -47,14 +47,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=685
-NormalPos.bottom=245
+NormalPos.right=1059
+NormalPos.bottom=527
 Class=LaTeXView
-Document=resumetemplate.sty
+Document=crodriguezresume.sty
 
 [Frame2_View0,0]
-TopLine=15
-Cursor=401
+TopLine=41
+Cursor=1910
 
 [Frame3]
 Flags=0
@@ -65,14 +65,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=685
-NormalPos.bottom=245
+NormalPos.right=1059
+NormalPos.bottom=527
 Class=LaTeXView
-Document=googlecolors.sty
+Document=resumetemplate.sty
 
 [Frame3_View0,0]
-TopLine=0
-Cursor=65
+TopLine=15
+Cursor=401
 
 [Frame4]
 Flags=0
@@ -83,14 +83,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=685
-NormalPos.bottom=245
+NormalPos.right=1059
+NormalPos.bottom=527
 Class=LaTeXView
-Document=standardcolors.sty
+Document=googlecolors.sty
 
 [Frame4_View0,0]
 TopLine=0
-Cursor=50
+Cursor=65
 
 [SessionInfo]
 FrameCount=5

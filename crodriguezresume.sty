@@ -64,7 +64,7 @@
 	\end{tikzpicture}
 }
 
-\SetBgContents{\Claudiordgz}% Select tikz picture
+%\SetBgContents{\Claudiordgz}% Select tikz picture
 
 \SetBgPosition{current page.north east}% Select location
 \SetBgOpacity{0.25}% Select opacity
@@ -110,15 +110,16 @@
 }} 
 
 \setkomafont{subsection}{\mysubsection}
-\newcommand{\mysubsection}[1]{%
+\newcommand{\mysubsection}[2][subsection-color]{%
 \Large%
 \setlength{\fboxsep}{0cm}%already boxed
-\begin{minipage}{\linewidth}%
-    \vspace*{2pt}%Space before
-    \centering\normalfont\sffamily\Large\bfseries#1
-    \vspace*{2pt}%Space after
-\end{minipage}%
-} 
+\colorbox{#1}{%
+    \begin{minipage}{\linewidth}%
+        \vspace*{2pt}%Space before
+        \centering\normalfont\huge\bfseries\color{white}#2
+        \vspace*{2pt}%Space after
+    \end{minipage}%
+}} 
 
 \setkomafont{subsubsection}{\mysubsubsection}
 \newcommand{\mysubsubsection}[1]{%
