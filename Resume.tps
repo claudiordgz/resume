@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1059
-NormalPos.bottom=527
+NormalPos.right=594
+NormalPos.bottom=705
 Class=LaTeXView
-Document=standardcolors.sty
+Document=colors\defaultcolors.sty
 
 [Frame0_View0,0]
 TopLine=0
-Cursor=50
+Cursor=39
 
 [Frame1]
 Flags=0
@@ -29,14 +29,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1059
-NormalPos.bottom=527
+NormalPos.right=594
+NormalPos.bottom=705
 Class=LaTeXView
-Document=Resume.tex
+Document=templ\amazon.tex
 
 [Frame1_View0,0]
-TopLine=31
-Cursor=2400
+TopLine=0
+Cursor=1117
 
 [Frame2]
 Flags=0
@@ -47,14 +47,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1059
-NormalPos.bottom=527
+NormalPos.right=594
+NormalPos.bottom=705
 Class=LaTeXView
-Document=crodriguezresume.sty
+Document=Resume.tex
 
 [Frame2_View0,0]
-TopLine=41
-Cursor=1910
+TopLine=0
+Cursor=83
 
 [Frame3]
 Flags=0
@@ -65,14 +65,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1059
-NormalPos.bottom=527
+NormalPos.right=594
+NormalPos.bottom=705
 Class=LaTeXView
-Document=resumetemplate.sty
+Document=crodriguezresume.sty
 
 [Frame3_View0,0]
-TopLine=15
-Cursor=401
+TopLine=51
+Cursor=1747
 
 [Frame4]
 Flags=0
@@ -83,16 +83,52 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=1059
-NormalPos.bottom=527
+NormalPos.right=594
+NormalPos.bottom=705
 Class=LaTeXView
-Document=googlecolors.sty
+Document=resumetemplate.sty
 
 [Frame4_View0,0]
 TopLine=0
-Cursor=65
+Cursor=401
+
+[Frame5]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=594
+NormalPos.bottom=705
+Class=LaTeXView
+Document=colors\teradatacolors.sty
+
+[Frame5_View0,0]
+TopLine=0
+Cursor=196
+
+[Frame6]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=594
+NormalPos.bottom=705
+Class=LaTeXView
+Document=templ\teradata.tex
+
+[Frame6_View0,0]
+TopLine=0
+Cursor=911
 
 [SessionInfo]
-FrameCount=5
-ActiveFrame=1
+FrameCount=7
+ActiveFrame=0
 

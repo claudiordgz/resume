@@ -1,7 +1,7 @@
 \documentclass{scrartcl}
 
 \usepackage{resumetemplate}
-\usepackage{colors/standardcolors}
+\usepackage{colors/defaultcolors}
 \usepackage{crodriguezresume}
 
 \begin{document}
@@ -14,32 +14,32 @@
 \mobile\enskip\grayfont{+52 1 (81) 13490166}\\
 \phone\enskip\grayfont{01 52 8119358682}\\
 \href{http://www.claudiordgz.com}{\pencil\enskip\grayfont{claudiordgz.com}}\\
-\href{https://twitter.com/claudiordgz}{\twitter\enskip\grayfont{@claudiordgz}}\\
-\href{https://github.com/claudiordgz}{\github\enskip\grayfont{github.com/claudiordgz}}\\
 \href{http://careers.stackoverflow.com/claudiordgz}{\stackOverflow\enskip\grayfont{StackOverflow Profile}}
 \end{flushleft}
 
 \begin{minipage}[t]{0.69\textwidth}
 	\section*{Objective}
-		\input{templ/generic}
+		\input{templ/amazon}
 		
 \section*{Professional Experience}
-\ProfessionalItm{http://www.amige.com}{AMI GE Automation \& Control Innovation}{June 2012 - Current}
-	
-	\textbf{Project:} \href{http://amige.com/meltshops_technological_controls_smartarc.html}{Visual KB / SmartArc}
-	\begin{itemize}[noitemsep]
-		\item Provided Customer Support, documenting every single step and creating tutorials reduced customer support from 30 man hours average per project to 1 hour.
-		\item Maintain manual up to speed reducing developers confusion and increasing production of new features.
-		\item Rebuilt the installer application to prevent customer withdrawal from software old look and to improve configuration. 
-	\end{itemize}
-	
+\ProfessionalItm{http://www.epicor.com/lac/Pages/default.aspx}{Epicor Software}{June 2014 - Current}
+	\textbf{Project:} \href{http://www.epicor.com/Products/Pages/Epicor-LaserCat-3.aspx}{LaserCat 3}
+	 \begin{itemize}[noitemsep]
+		\item Allowed utility to check for updates for all of my customers by developing a cross platform C++ utility.
+		\item Created silent installations by migrating installers from exe to msi.
+		\item Reduced production time for installations by creating reusable libraries.
+		\item Added relative position design to WiX Dialogs by creating parsing utilities in C++.
+	 \end{itemize}
+
+\ProfessionalItm{http://www.amige.com}{AMI GE Automation \& Control Innovation}{June 2012 - June 2014}
 	\textbf{Project:} \href{http://amige.com/meltshops_technological_controls_digitarc_px3.html}{DigitARC PX3}
 	\begin{itemize}[noitemsep]
-		\item Developed features for the QNX Embedded System, investigation of Audio Compression to decrease our database files in 60\% size without quality compression.
-		\item Provided Customer Support on any issue related, documenting every single step and creating tutorials reduced customer support from 6 man hours average per week to 2 hours per month average.
-	\item Rewrote the Product Manual in \LaTeX, added to build system. Modify once, publish on different places.
-	\item Developed C++, Bash and Batch tests for finding breaking points in our system, successfully prevented errors when changes to crucial features of the system were done.
+		\item Reduced size of files being logged by \%60 using Audio Compression.
+		\item Prevented errors when changes to crucial features of the system were done by automating C++ and Bash/Batch testing mechanism and automating them using CruiseControl. 
+		\item Reduced customer support from 6 man-hr average p/week to 2 man-hr p/month average by creating tutorials for repeated configuration errors, creating tools in Python, and creating Unit Tests for common changed parts.
+		\item Created a modify once, publish on different places system for our product manual, automated it in CruiseControl.
 	\end{itemize}
+	
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.28\textwidth}
@@ -83,7 +83,7 @@
 		\end{minipage}
 		\begin{minipage}[t]{0.24\textwidth}
 				\begin{center}
-					\Large C\#
+					\Large WPF/C\#
 				\end{center}
 		\end{minipage}
 		
@@ -107,28 +107,18 @@
 			\item Windows
 			\item Linux 
 			\item QNX
+			\item Visual Studio
+			\item WiX Toolset
 		\end{itemize}
 	\end{flushright}
 \end{minipage}
 
-\pagebreak
-\section*{Professional Experience}
-
-\ProfessionalItm{http://www.amige.com}{AMI GE Automation \& Control Innovation}{June 2012 - Current}
-
-\textbf{Project:} \href{http://amige.com/meltshops_technological_controls_digitarc_px3.html}{DigitARC PX3}
-	\begin{itemize}[noitemsep]
-		\item Built deployment tools that detect changes in our product and have allowed our engineers to test the product for correct communications when installing the software for our customers.
-		\item Rebuilt critical FFT calculation using OOD, built proper Unit Tests for Continuous Integration, with this we stopped having calculation errors in the rest of the features and increased our product's reliability. 
-	\end{itemize}
+\newpage
 
 \ProfessionalItm{}{GE Consumer \& Industrial}{2008}
 
 \begin{itemize}[noitemsep]
 	\item Developed 147 scheduled maintenance tasks, one for each equipment, deployed and trained maintenance and production personnel.  
-	\item Got the right tools for maintenance tasks, performing all the procurement and obtaining all administrative permissions.
-	\item Performed corrective maintenance when necessary, even if it included getting grease all over me. 
-	\item Coordinated preventive maintenance tasks with the maintenance personnel.
 	\item Trained Purchasing Leader, Technology Leader, Maintenance Leader, and Production Leader in the use of PMPro tool so they could maximize their benefits from Preventive Maintenance.  
 \end{itemize}
 
@@ -148,6 +138,17 @@ Master in Science with Specialty in Intelligent Systems (2010)
 Mechatronics Engineer (2004-2008) 
 
 \section*{Projects}
+\subsection*{\href{https://bitbucket.org/claudiordgz/dentalplacecustomeraccess/src}{Dental Place Access Control}}
+
+WPF/Net 4.5 Utility to allow to keep up to date records for customer access control.
+ 
+\begin{itemize}[leftmargin=*]
+	\setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+	\item Allowed my customer to maintain his brand vision by creating a minimal, and beautiful solution for him.
+\end{itemize}
+
 
 \subsection*{\href{http://claudiordgz.github.io/Phoenix2D/}{Phoenix2D Project}}
 
@@ -161,14 +162,15 @@ Open Source project to allow students to develop their own Player to compete in 
 	\item Create documentation.
 \end{itemize}
 
-\subsection*{\href{https://github.com/claudiordgz/AdGenerator}{Ad Generator}}
+\subsection*{\href{https://github.com/claudiordgz/WixRelativeDialogs/}{WixRelativeDialogs Project}}
+
+Open Source project for creating dialogs using relative positioning, allowing for more flexible production times. (Faster is better).
 
 \begin{itemize}[leftmargin=*]
-	\setlength{\itemsep}{6pt}
+	\setlength{\itemsep}{1pt}
   \setlength{\parskip}{0pt}
   \setlength{\parsep}{0pt}
-  	\item Developing Cross Platform App to Allow easier Ad Generation for multiple web platforms. 
+	\item Developed whole functionality, working in adding UI using QT. 
 \end{itemize}
-
 	
 \end{document}
